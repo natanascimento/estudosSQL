@@ -51,7 +51,10 @@ order by /*nome da coluna*/ asc;
 create user /*nome do usuario*/ superuser inherit createdb createrole
 
 /*Alterando senha*/
-alter user /*nome do usuario*/ password 
+alter user /*nome do usuario*/ password /*'password'*/
+
+/*Renomeando usuário*/
+alter user /*nome do usuario*/ rename to /*nome do usuario*/
 
 /*Visualizar usuarios do SGBD*/
 select * from pg_user
